@@ -74,6 +74,11 @@ namespace HPlusSports.Controllers
 
             /**** End Paging Logic ****/
 
+            if (Request.IsAjaxRequest()) 
+            {
+                return PartialView("ProductList", model);
+            }
+
             return View("ProductList", model);
         }
 
