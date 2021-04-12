@@ -75,7 +75,7 @@ namespace HPlusSports.Controllers
                 return View();
             }
 
-            TempData["SuccessMessage"] = $"Successfully added {item.Name} to the cart";
+            TempData.SuccessMessage($"Successfully added {item.Name} to the cart");
 
             return RedirectToAction("Index", "Cart");
         }
