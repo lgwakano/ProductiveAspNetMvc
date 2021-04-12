@@ -24,6 +24,7 @@ namespace HPlusSports
 
         protected void Application_Start()
         {
+            Dependencies.Register();
             DatabaseConfig.Initialize();
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);

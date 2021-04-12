@@ -8,11 +8,6 @@ namespace HPlusSports.Controllers
     {
         private readonly HPlusSportsDbContext _context;
 
-        public ImagesController()
-            : this(new HPlusSportsDbContext())
-        {
-        }
-
         public ImagesController(HPlusSportsDbContext context)
         {
             _context = context;

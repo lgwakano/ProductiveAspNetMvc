@@ -10,11 +10,6 @@ namespace HPlusSports.Controllers
     {
         private readonly HPlusSportsDbContext _context;
 
-        public CartController()
-            : this(new HPlusSportsDbContext())
-        {
-        }
-
         public CartController(HPlusSportsDbContext context)
         {
             _context = context;

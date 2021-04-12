@@ -10,11 +10,6 @@ namespace HPlusSports.Controllers
     {
         private HPlusSportsDbContext _context;
 
-        public InventoryController()
-          : this(new HPlusSportsDbContext())
-        {
-        }
-
         public InventoryController(HPlusSportsDbContext context)
         {
             _context = context;
