@@ -72,7 +72,7 @@
                             <img width="50" height="50" src="@Url.Action("Product", "Images", new { id = item.SKU })" alt="">
                           </td>
                           <td>
-                            <a href="@Url.Action("Product", "Products", new { id = item.SKU })">
+                            <a href="@Url.Product(item.SKU)">
                               @item.Name
                             </a>
                           </td>

@@ -18,7 +18,7 @@
 
         <div class="product-summary col-md-3 text-center">
           <h4>
-            <a href="@Url.Action("Product", "Products", new { id = product.SKU })">
+            <a href="@Url.Product(product)">
               <img class="product-image img-thumbnail" src="@Url.Action("Product", "Images", new { id = product.SKU })" />
               <span class="name">@product.Name</span>
             </a>

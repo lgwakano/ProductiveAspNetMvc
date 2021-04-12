@@ -45,7 +45,7 @@
                 </a>
               </td>
               <td>
-                <a href="@Url.Action("Product", "Products", new { id = item.SKU })">
+                <a href="@Url.Product(item.SKU)">
                   <img class="product-image img-thumbnail" src="@Url.Action("Product", "Images", new { id = item.SKU })" />
                   <span>@item.Name</span>
                 </a>
