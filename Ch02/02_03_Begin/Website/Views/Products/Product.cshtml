@@ -34,21 +34,7 @@
       @{
           var rating = (HPlusSports.Models.ProductRating)ViewData["Rating"];
       }
-      @if (rating == null || rating.ReviewCount == 0)
-      {
-          <span><em>No Rating</em></span>
-      }
-      else
-      {
-          <span title="@rating.Rating.GetValueOrDefault().ToString("N1")">
-            @for (var i = 1; i <= 5; i++)
-            {
-              var starClass = (rating.Rating >= i) ? "star" : "star-empty";
-                <span class="rating-star glyphicon glyphicon-@starClass"></span>
-            }
-          </span>
-          <span>(@rating.ReviewCount)</span>
-      }
+      @Html.Rating(rating)
     </p>
 
     <p>
